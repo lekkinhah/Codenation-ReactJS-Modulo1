@@ -4,3 +4,105 @@
 * {
 	box-sizing: border-box;
 }
+body{
+	font-family: 'Montserrat';
+	font-size: 10px;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+header{
+	padding: 20px;
+	background-image: url('../img/capa-madmax2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 90vh;
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+}
+.head-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.profile{
+	display: flex;
+	align-items: center;
+}
+.profile img {
+	border-radius: 100%;
+	width: 45px;
+	height: 45px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.profile label{
+	color: #FFF;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.head-nav{
+	justify-content: space-between;
+	list-style: none;
+	display: flex;
+}
+.head-nav a{
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 25px;
+	font-size: 1.3em;
+	transition: all 0.2s ease-in-out;
+}
+
+h1 {
+	font-size: 65px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+header section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.head-genre{
+	margin: 15px 0 30px;
+	text-transform: uppercase;
+	display: flex;
+}
+.head-genre a{
+	color: #FFF;
+	margin-right: 15px;
+	font-size: 1.3em;
+	transition: all 0.2s ease-in-out;
+}
+
+.section-button{
+	display: inline-block;
+    padding: 15px 50px;
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #e4bb23;
+    border-radius: 40px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.section-button i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+.section-button:hover{
+	background-color: #bc9a1d;
+}
+.head-genre a:hover, .head-nav a:hover{
+	color: #e4bb23;
+}
