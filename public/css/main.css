@@ -142,6 +142,7 @@ footer{
 }
 footer .container{
 	justify-content: space-between;
+	align-items: center;
 }
 .footer-list{
 	display: flex;
@@ -156,6 +157,15 @@ footer .container{
 	font-size: 25px;
 	color: #bababa;
 	transition: all 0.2s ease-in-out;
+}
+.icon-twitter a:hover{
+	color: #55acee;
+}
+.icon-facebook a:hover{
+	color: #3b5998;
+}
+.icon-instagram a:hover{
+	color: #e95950;
 }
 .section-button:hover{
 	background-color: #bc9a1d;
