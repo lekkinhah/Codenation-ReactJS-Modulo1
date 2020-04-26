@@ -8,18 +8,20 @@ body{
 	font-family: 'Montserrat';
 	font-size: 10px;
 }
-
 a {
 	text-decoration: none;
 	cursor: pointer;
 }
-
+ul {
+	list-style: none;
+	padding: 0;
+}
 .container {
 	margin: 0 auto;
     position: relative;
 	width: 960px;
+	display: flex;
 }
-
 header{
 	padding: 20px;
 	background-image: url('../img/capa-madmax2.jpg');
@@ -62,9 +64,7 @@ header .container{
 }
 .head-nav{
 	justify-content: space-between;
-	list-style: none;
 	display: flex;
-	padding: 0;
 }
 .head-nav a{
 	color: #FFF;
@@ -74,7 +74,6 @@ header .container{
 	font-size: 1.3em;
 	transition: all 0.2s ease-in-out;
 }
-
 h1 {
 	font-size: 65px;
 	font-weight: bold;
@@ -100,8 +99,7 @@ h1 {
 	font-size: 1.3em;
 	transition: all 0.2s ease-in-out;
 }
-
-.section-button{
+.head-button{
 	display: inline-block;
     padding: 15px 50px;
     color: #000;
@@ -112,7 +110,7 @@ h1 {
     position: relative;
     transition: all 0.2s ease-in-out;
 }
-.section-button i {
+.head-button i {
 	font-size: 1.5em;
 	position: absolute;
 	right: 15px;
@@ -135,7 +133,30 @@ header::after{
     height: 100%;
     background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );;
 }
-
+footer{
+	background-color: #FFF;
+	color: #bababa;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+footer .container{
+	justify-content: space-between;
+}
+.footer-list{
+	display: flex;
+}
+.footer-list li{
+	margin: 0 20px;
+}
+.footer-list li:last-child{
+	margin-right: 0;
+}
+.footer-list a{
+	font-size: 25px;
+	color: #bababa;
+	transition: all 0.2s ease-in-out;
+}
 .section-button:hover{
 	background-color: #bc9a1d;
 }
